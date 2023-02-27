@@ -1,0 +1,138 @@
+<mvc:View controllerName="QUALITY-PORTALQUALITY-PORTAL.controller.View3" xmlns:html="http://www.w3.org/1999/xhtml"
+xmlns:mvc="sap.ui.core.mvc"
+	xmlns:c="sap.ui.table"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	
+	<Page title="{i18n>QUALITY-RESULT RECORDS}" class="riskbg" > 
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Bar>
+		<contentMiddle>
+			<Text text="KAAR TECHNOLOGIES 2023"></Text>
+		</contentMiddle>
+		</Bar>
+			</OverflowToolbar>
+		</footer>
+	
+	<content>
+		
+			<Image src="../KT_15_Logo.png" width="300px" height="150px" class="style1"></Image>
+			
+			
+			
+			<f:SimpleForm id="SimpleFormChange354"
+			editable = "true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >	
+	
+			<f:content height="100px">
+				<Label class="text1" text="INSPECTION LOT" />
+				<Input id="inslot" 	type="Number"/>
+				
+					<Label text="PERIOD" />
+				<Input id="fil" 	type="Text" />
+				<Button text="Search-Help" type="Emphasized" press="Onpopup"></Button>
+			</f:content>
+				</f:SimpleForm>
+			
+		        
+					<FlexBox
+			   height="100px"
+			   alignItems="Start"
+			   justifyContent="Center">
+						<Vbox>
+				<Button text="GET-DETAILS" type="Emphasized" press="OnSubmit"></Button></Vbox>
+				<Vbox>
+				<Button class="risk" text="QUALITY-USAGE" type="Emphasized"  press="OnNext"></Button>
+				</Vbox>
+			</FlexBox>
+			
+			<Table id="response" items = "{response>/results}" >
+				<headerToolbar>
+					<OverflowToolbar>
+						<content>
+							<Title text="QUALITY-RESPONSE"  level="H2" class="text"/>
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				
+				
+			<columns>
+				<Column width ="12em">
+					<Text text="Inspection Lot Number" />
+				</Column>
+				<Column width ="12em">
+					<Text text="Created Date" />
+				</Column>
+					<Column width ="12em">
+					<Text text="Original Input" />
+				</Column>
+				
+					<Column width ="12em">
+					<Text text="Arithmetic Mean Value" />
+				</Column>
+				<Column width ="12em">
+						<Text text="  Number of Recorded Sample Units" />
+				</Column>
+				<Column width ="12em">
+					<Text text="Number of Inspected Sample Units" />
+				</Column>
+						<Column>
+<Text text="Click here to check Status"/>
+</Column>	
+				
+				
+			</columns>
+			<items>
+				<ColumnListItem>
+			
+
+<cells>
+<Text text="{response>IInsplot}" />
+</cells>
+<cells>
+<Text text="{response>Erstelldat}" />
+</cells>
+<cells>
+<Text text="{response>OriginalInput}" />
+</cells>
+<cells>
+<Text text="{response>Satzstatus}" />
+</cells>
+<cells>
+<Text text="{response>Iststpumf}" />
+</cells>
+<cells>
+<Text text="{response>Anzwertg}" />
+</cells>
+
+<cells>
+<Button icon="sap-icon://activity-2" press="Oninfo"/>
+</cells>
+				</ColumnListItem>
+			</items>
+			</Table>
+				
+			
+	
+			
+		
+	</content>
+	</Page>
+	
+	</mvc:View>

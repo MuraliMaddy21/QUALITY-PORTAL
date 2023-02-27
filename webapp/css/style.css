@@ -1,0 +1,99 @@
+.style
+{
+	font-weight: bold;
+}
+.style1
+{
+	margin-left:3rem;
+}
+
+body {
+  background-image: url('../SAP_logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.risk{
+	margin-left:2rem;
+}
+.loginbg
+{
+
+ background-image: url(https://img.freepik.com/premium-photo/steel-pipes-with-valve-gas-oil-steel-tubes-concept-3d-rendering_492320-530.jpg?w=1060);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+.incbg
+{
+
+ background-image: url(https://img.freepik.com/free-photo/photo-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-interior-hightech-factory-modern-production_645730-185.jpg?w=996&t=st=1676630949~exp=1676631549~hmac=1be58342655c415666f3d33ae6bf382696ac30cfa74aca3578519253599b8223);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+ 
+ 
+}
+.incdtbg
+{
+
+ background-image: url(https://img.freepik.com/free-photo/smooth-blue-concrete-wall_53876-96203.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+ 
+ 
+}
+
+
+.riskbg
+{
+
+ background-image: url(https://img.freepik.com/free-photo/modern-factory-industrial-zone-blue-sky_181624-6369.jpg?w=996&t=st=1676631064~exp=1676631664~hmac=c9d8f794df987abdc64112a63a9b035cea3b1812ba8aadbe9687ed01693a8c02);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+
+.usgbg
+{
+	background-image:url(https://img.freepik.com/premium-photo/power-plant-industrial-estate-twilight-natural-gas-combined-cycle-power-plant-turbine-generator-energy-power-plant-industrial-refinery-oil-gas-twilight-supply-electricity_219644-539.jpg?w=1060);
+	 background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+
+.dashbg
+{
+	background-image:url(https://cdn.wallpapersafari.com/38/60/RvLtEc.jpg);
+	 background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+
+.text
+{
+	color:#000000;
+	background-color:white;
+}
+.text1
+{
+	color:#000000;
+	margin-left:0.5rem;
+	margin-top:0.15rem;
+}
+.center
+{
+	margin-top:10rem;
+	margin-left:32rem;
+}
+.img
+{
+	margin-left:8rem;
+}

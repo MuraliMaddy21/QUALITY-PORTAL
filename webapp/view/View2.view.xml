@@ -1,0 +1,141 @@
+<mvc:View controllerName="QUALITY-PORTALQUALITY-PORTAL.controller.View2" xmlns:html="http://www.w3.org/1999/xhtml"
+xmlns:mvc="sap.ui.core.mvc"
+	xmlns:c="sap.ui.table"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	
+	<Page title="{i18n>QUALITY-INSPECTION LIST}" class="incbg" > 
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Bar>
+		<contentMiddle>
+			<Text text="KAAR TECHNOLOGIES 2023"></Text>
+		</contentMiddle>
+		</Bar>
+			</OverflowToolbar>
+		</footer>
+	
+	<content>
+		
+			<Image src="../KT_15_Logo.png" width="300px" height="150px" class="style1"></Image>
+			
+			
+			
+			<f:SimpleForm id="SimpleFormChange354" class="box"
+			editable = "true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >	
+	
+			<f:content height="100px">
+				<Label text="PLANTID" class="text1" />
+				<Input id="pid" 	type="Number"/>
+				
+					<Label text="PERIOD" class="text1" />
+				<Input id="fil" 	type="Text" />
+				<Button text="Search-Help" type="Emphasized" press="Onpopup"></Button>
+			</f:content>
+				</f:SimpleForm>
+			
+		        
+					<FlexBox
+			   height="100px"
+			   alignItems="Start"
+			   justifyContent="Center">
+						<Vbox>
+				<Button text="GET-DETAILS" type="Emphasized" press="OnSubmit"></Button></Vbox>
+				<Vbox>
+				<Button class="risk" type="Emphasized" text="QUALITY-RESULT RECORDS"  press="OnNext"></Button>
+				</Vbox>
+			</FlexBox>
+				<ScrollContainer  width="100%" horizontal="true" vertical="true" focusable="true">
+			<Table id="inspection" items = "{inspection>/results}" >
+				<headerToolbar>
+					<OverflowToolbar>
+						<content>
+							<Title text="QUALITY-INSPECTION-LIST"  level="H2" class="text"/>
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				
+				
+			<columns>
+				<Column width ="20em">
+					<Text text="Inspection Lot Number" />
+				</Column>
+				<Column width ="20em">
+					<Text text="Created Date" />
+				</Column>
+					<Column width ="20em">
+					<Text text="Purchase Order Number" />
+				</Column>
+<!--					<Column width ="15em">-->
+<!--					<Text text="Vendor" />-->
+<!--				</Column>-->
+		
+<!--					<Column width ="15em">-->
+<!--					<Text text="Material" />-->
+<!--				</Column>-->
+				
+<!--				<Column>-->
+<!--<Text text="Material Description"/>-->
+<!--</Column>-->
+		<Column>
+<Text text="Click here for Detailed View"/>
+</Column>	
+				
+				
+			</columns>
+			<items>
+				<ColumnListItem>
+			
+
+<cells>
+<Text text="{inspection>Insplot}" id="ins" />
+</cells>
+<cells>
+<Text text="{inspection>CreatDat}" />
+</cells>
+<cells>
+<Text text="{inspection>PoNumber}" />
+</cells>
+<!--<cells>-->
+<!--<Text text="{inspection>Vendor}" />-->
+<!--</cells>-->
+<!--<cells>-->
+<!--<Text text="{inspection>Material}" />-->
+<!--</cells>-->
+<!--<cells>-->
+<!--<Text text="{inspection>TxtMat}" />-->
+<!--</cells>-->
+<cells>
+<Button icon="sap-icon://open-command-field" press="Oninfo"/>
+</cells>
+
+
+				</ColumnListItem>
+			</items>
+			</Table>
+			</ScrollContainer>
+				
+			
+	
+			
+		
+	</content>
+	</Page>
+	
+	</mvc:View>

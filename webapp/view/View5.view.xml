@@ -1,0 +1,36 @@
+<mvc:View controllerName="QUALITY-PORTALQUALITY-PORTAL.controller.View5" xmlns:html="http://www.w3.org/1999/xhtml"
+xmlns:mvc="sap.ui.core.mvc"
+	xmlns:c="sap.ui.table"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	
+	<Page title="{i18n>DASHBOARD}" class="dashbg" >
+			<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Bar>
+		<contentMiddle>
+			<Text text="KAAR TECHNOLOGIES 2023"></Text>
+		</contentMiddle>
+		</Bar>
+			</OverflowToolbar>
+		</footer>
+	 
+	<content>
+<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+					<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/1200px-SAP_2011_logo.svg.png" class="img" width="500px" height="300px"/>
+					<items>
+					<Button width="12rem" text="INSPECTION" type="Emphasized" press="onClick"></Button>
+					<Button width="12rem" text="RESULT RECORDS" type="Emphasized" press="onSubmit"></Button>
+					<Button width="12rem" text="USAGE DECISION" type="Emphasized" press="onPress"></Button>
+					<!--<Button width="12rem" text="Return To Home" type="Emphasized" press="onHome"></Button>-->
+					</items>
+					</VBox>
+	
+			
+		
+	</content>
+	</Page>
+	
+	</mvc:View>

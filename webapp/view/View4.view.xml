@@ -1,0 +1,135 @@
+<mvc:View controllerName="QUALITY-PORTALQUALITY-PORTAL.controller.View4" xmlns:html="http://www.w3.org/1999/xhtml"
+xmlns:mvc="sap.ui.core.mvc"
+	xmlns:c="sap.ui.table"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	
+	<Page title="{i18n>QUALITY-USAGE DECISION}" class="usgbg" > 
+	
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Bar>
+		<contentMiddle>
+			<Text text="KAAR TECHNOLOGIES 2023"></Text>
+		</contentMiddle>
+		</Bar>
+			</OverflowToolbar>
+		</footer>
+	
+	<content>
+		
+			<Image src="../KT_15_Logo.png" width="300px" height="150px" class="style1"></Image>
+			
+			
+			
+			<f:SimpleForm id="SimpleFormChange354"
+			editable = "true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >	
+	
+			<f:content height="100px">
+				<Label class="text1" text="PLANT ID" />
+				<Input id="pid" 	type="Number"/>
+				
+				<!--	<Label text="PERIOD"  class="text1" />-->
+				<!--<Input id="fil" 	type="Text" />-->
+				<!--<Button text="Search-Help" type="Emphasized" press="Onpopup"></Button>-->
+			</f:content>
+				</f:SimpleForm>
+			
+		        
+					<FlexBox
+			   height="100px"
+			   alignItems="Start"
+			   justifyContent="Center">
+						<Vbox>
+				<Button text="GET-DETAILS" type="Emphasized" press="OnSubmit"></Button></Vbox>
+				<Vbox>
+			
+				</Vbox>
+			</FlexBox>
+	
+			
+			<Table id="usage" items = "{usage>/results}" >
+				<headerToolbar>
+					<OverflowToolbar>
+						<content>
+							<Title text="QUALITY-USAGE DECISION"  level="H2" class="text"/>
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				
+				
+			<columns>
+				<Column width ="20em">
+					<Text text="Inspection Lot Number" />
+				</Column>
+				<Column width ="20em">
+					<Text text="Automatic Usage Decision" />
+				</Column>
+					<Column width ="20em">
+					<Text text="Quality Score" />
+				</Column>
+				<!--<Column width ="12em">-->
+				<!--		<Text text="Vendor" />-->
+				<!--</Column>-->
+				<!--<Column width ="12em">-->
+				<!--	<Text text="Material" />-->
+				<!--</Column>-->
+				<!--	<Column width ="12em">-->
+				<!--	<Text text="Material Description" />-->
+				<!--</Column>-->
+				
+				
+			</columns>
+			<items>
+				<ColumnListItem>
+			
+
+<cells>
+<Text text="{usage>Insplot}" />
+</cells>
+<cells>
+<Text text="{usage>IndAutomaticUd}" />
+</cells>
+<cells>
+<Text text="{usage>QualityScore}" />
+</cells>
+<!--<cells>-->
+<!--<Text text="{usage>UdChangedByUser}" />-->
+<!--</cells>-->
+<!--<cells>-->
+<!--<Text text="{usage>Material}" />-->
+<!--</cells>-->
+<!--<cells>-->
+<!--<Text text="{usage>TxtMat}" />-->
+<!--</cells>-->
+<!--<cells>-->
+<!--<Text text="{usage>Evdat}" />-->
+<!--</cells>-->
+				</ColumnListItem>
+			</items>
+			</Table>
+				
+			
+	
+			
+		
+	</content>
+	</Page>
+	
+	</mvc:View>
